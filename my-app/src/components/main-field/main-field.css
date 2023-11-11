@@ -1,0 +1,19 @@
+
+.main-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /*min-height: 300px;*/
+    padding: 50px 0;
+    /*background-color: #278835;*/
+    background-color: #187552;
+
+}
+
+.main-field p {
+    margin: 0;
+    padding: 0;
+}

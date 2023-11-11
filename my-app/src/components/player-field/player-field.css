@@ -1,0 +1,10 @@
+.player-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    min-width: 360px;
+    min-height: 200px;
+    background-color: #142120;
+}
