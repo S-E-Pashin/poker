@@ -14,15 +14,65 @@ import Card from "../card/card";
 class PlayerField extends Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      openCards: true
+    }
   }
 
+  // openCardsPlayer = () => {
+  //   this.setState((state) => ({
+  //     openCards: true
+  //     })
+  //   )
+  // }
+  //
+  // closeCardsPlayer = () => {
+  //   this.setState((state) => ({
+  //       openCards: false
+  //     })
+  //   )
+  // }
+  // Переключатор от обратного, работает по кругу.
+  cardOpennessSwitch = () => {
+    console.log("Изменилось отображение карты!");
+    // console.log(this.state.openCards);
+
+    this.setState((state) => ({
+        openCards: !(state.openCards)
+      })
+    )
+    // console.log(this.state.openCards);
+  }
+
+
+
+
   render() {
+    let cardOpen = this.state.openCards;
+    console.log(cardOpen);
+    // let card;
+    // if(cardOpen === true) {
+    //   card = "card";
+    // } else if(cardOpen === false) {
+    //   card = "card-close"
+    // }
+
     return (
       <div className="player-field">
+        <div className="player-field-cards">
+          <Card playerCard={true} switchOpenCard={cardOpen}/>
+          <Card playerCard={true} switchOpenCard={cardOpen}/>
+        </div>
+        <div className="player-field-control-panel">
+          <button className="player-field-button"
+                  onClick={this.cardOpennessSwitch}
+          >
+            скрыть/показать карты
+          </button>
+        </div>
         {/*<Card {Deck.giveCP.{...giveCP[0]}}/>*/}
         {/*<Card {...cardsPlayer[1]}/>*/}
-        <Card/>
-        <Card/>
       </div>
     )
   }

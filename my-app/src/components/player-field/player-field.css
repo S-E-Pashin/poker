@@ -1,10 +1,30 @@
 .player-field {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
     min-width: 360px;
     min-height: 200px;
-    background-color: #142120;
+    margin: 20px 0;
+    /*background-color: #142120;*/
+    background-color: grey;
+}
+
+.player-field-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.player-field-button {
+    min-width: 150px;
+    min-height: 50px;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: black;
+    color: red;
 }
