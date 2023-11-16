@@ -51,6 +51,14 @@ class PlayerField extends Component {
   render() {
     let cardOpen = this.state.openCards;
     console.log(cardOpen);
+    let classNamePlayerField = "player-field";
+
+    const {position} = this.props;
+
+    if(position === "top") {
+      classNamePlayerField = "player-field player-field-180deg";
+    }
+
     // let card;
     // if(cardOpen === true) {
     //   card = "card";
@@ -59,7 +67,7 @@ class PlayerField extends Component {
     // }
 
     return (
-      <div className="player-field">
+      <div className={classNamePlayerField}>
         <div className="player-field-cards">
           <Card playerCard={true} switchOpenCard={cardOpen}/>
           <Card playerCard={true} switchOpenCard={cardOpen}/>

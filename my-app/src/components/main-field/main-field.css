@@ -4,12 +4,15 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
+    flex-wrap: nowrap;
+    /*width: 60%;*/
+    /*width: fit-content;*/
     /*min-height: 300px;*/
-    padding: 50px 0;
+    padding: 2rem;
     /*background-color: #278835;*/
     background-color: #187552;
+    border: solid 0.02rem black;
+    border-radius: 10px;
 
 }
 

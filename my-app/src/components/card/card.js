@@ -58,7 +58,7 @@ class Card extends Component {
 
   bodyCardClose = () => {
     return (
-      <div className="card" onClick={this.giveCard}>
+      <div className="card card-close" onClick={this.giveCard}>
         <img src={logo} className="card-bg" />
       </div>
     )

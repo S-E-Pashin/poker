@@ -73,3 +73,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 npx create-react-app my-app создание приложения
 cd my-app вход в папку
 npm start запуск
+пробую билд
+npm run build
