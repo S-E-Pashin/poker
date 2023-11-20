@@ -23,3 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 task.txt
 todo.txt
+
+
+/.idea
