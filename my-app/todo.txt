@@ -1,6 +1,7 @@
 тест 11 48
 commit подраздел
 12 35
+14 56 + ссш
 https://github.com/S-E-Pashin/poker/tree/1d84e888383752af794e54c7c78fdb5cbca2a458/my-app
 
 Колода из 52 карт
